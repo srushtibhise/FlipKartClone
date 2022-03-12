@@ -1,30 +1,148 @@
+a{
+    text-decoration: none;
+}
 *{
     margin: 0;
     padding: 0;
 }
 
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
 body{
-    margin: auto;
-    background-color: lightslategray;
+    background-color:white;
+    color:black 
+ }
+ .mydark{
+    background-color:black;
+    color:white  
+ }
+
+/*header section*/
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2874f0;
+    width: 100%;
+    height: 56px;
+
+}
+.header-left{
+    width: 20%;
+    text-align: right;
+    margin: 5px 0px;
+    cursor:pointer;
+}
+.header-left a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1.5px;
 }
 
-/* header starts */
+.header-left-p a{
+    font-size: 10px;
+    letter-spacing: 1.5px;
+
+
+}
+
+.header-left-p  span{
+    color: yellow;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+.header-left-p:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.header-center{
+    width: 40%;
+    text-align: left;
+    line-height: 50px;
+    cursor: pointer;
+    padding-left: 10px;
+    position: relative;
+}
+
+.header-center-input{
+    height: 36px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+cursor: pointer;
+}
+
+.fa-search{
+    position: absolute;
+    top: 30%;
+    left:94%;
+    font-size: 18px;
+    color: #2874f0;
+
+}
+
+.header-right{
+    width: 40%;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    text-transform: capitalize;
+    line-height: 50px;
+
+}
+
+.header-right a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 25px;
+}
+.header-right .active{
+    background-color: white;
+    color:#2874f0;
+    padding: 5px 30px ;
+    height: 35px;
+    width: 130px;
+    line-height: 23px;
+    margin-top: 8px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.fa-shopping-cart{
+    padding-right: 10px;
+
+}
+
+
+
+
+
+
 
 .mobile_btn{
     display: none;
 }
 
-header{
-    height: 60px;
-    background-color: #2874f0;
+
+
+.label{
+    background-color: #111;
+    display: flex;
+    height: 26px;
+    width: 50px;
+    border-radius: 50px;
+    justify-content: right;
+    align-items: right
 }
 
-.logo img{
-    width: 6%;
-    margin-left: 14%;
-    position: relative;
-    top: 10px;
-}
+
 
 .explore{
     position: relative;
@@ -41,6 +159,7 @@ header{
     bottom: 38px;
     list-style: none;
     border: white;
+    margin-top: -11px;
 }
 
 .serach_bar input{

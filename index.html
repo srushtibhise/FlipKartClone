@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+   <scripts src="java.js"></scripts>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  <script>
       function changeMode(){
@@ -101,8 +102,14 @@
       <div class="carousel-item active">
         <img class="d-block w-100" src="./images/1st slide.PNG" alt="First slide">
       </div>
+      <div id="coupon" style="height: 211px; width: 348px; border: groove plum; position: absolute; margin-left: 587px; margin-top: -159px;">
+        <button onClick="closeCoupon()">&times;</button>
+      </div>
     
   </div>
+  <script>
+    window.onload=loadCoupon()
+</script>
     <!--Scroller
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
